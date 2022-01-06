@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CH7-3</title>
+        <style>
+            /* h3와 같은 레벨이 있는 div 전부 */
+            h3~div{
+                font-size: 10px;
+                color: orange;
+            }
+            /* h3와 같은레벨에 있는 첫번째 div */
+            h3+div {
+                font-size: 20px;
+                font-weight: bold;
+                color: blue;
+            }
+            /* title 클래스 와 같은 레벨에 있는 div 모두 */
+            #title ~div {
+                width: 300px;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h3 id="title"> 동위 선택자 (+,~) 동위선택자 </h3>
+        <div>div_01</div>
+        <div>div_02</div>
+        <div>div_03</div>
+        <div>div_04</div>
+        <div>div_05</div>
+    </body>
+
+</html>

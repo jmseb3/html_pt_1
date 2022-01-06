@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CH7</title>
+        <style>
+            #header {
+                width: 500px;
+                background-color: #ffd900;
+                border: 1px solid#808080;
+                text-align: center;
+            }
+
+            #warp {
+                width: 500px;
+                background-color: #66dbf6;
+                border: 2px solid #808080;
+                text-align: center;
+                overflow: hidden;
+            }
+
+            #content {
+                width: 350px;
+                border: 1px solid red;
+                float: left;
+            }
+
+            #side_banner {
+                border: 1px solid red;
+                float: left;
+            }
+
+            #footer {
+                clear: both;
+                width: 500px;
+                background-color: #ffd800;
+                border: 3px solid #808080;
+                text-align: center;
+            }
+
+            .menu1 {
+                color: #1822e2;
+                font-weight: bold;
+            }
+
+            .menu1,
+            .menu3,
+            .menu5 {
+                font-size: 20px;
+            }
+
+            ul li.menu {
+                font-size: 30px;
+            }
+
+            /* id 선택 #id이름 */
+            /* 클래스 선택 .클래스이름 */
+            input {
+                color: green;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            input[type=text]{
+                color : orange;
+                font-size: 45px;
+                width: 200px;
+            }
+
+            input[type=tel] {
+                color: red;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>Header</h1>
+        </div>
+        <div id="warp">
+            <div id="content">
+                <h1>Content</h1>
+                <ul>
+                    <li class="menu1">menu1</li>
+                    <li class="menu">menu2</li>
+                    <li class="menu3">menu3</li>
+                    <li class="menu">menu4</li>
+                    <li class="menu5">menu5</li>
+                </ul>
+            </div>
+            <div id="side_banner">
+                <h1>Banner</h1>
+                <a href="http://www.sba.seoul.kr" target="_blank">바로가기</a>
+            </div>
+
+        </div>        
+            <form> 
+                Name : <input type="text"> 
+                <br> 
+                ID : <input type="text"> 
+                <br> 
+                Password : <input type="password"> 
+                <br>
+                Phone : <input type="tel">
+            </form>
+        <div id="footer">
+            <h1>Footer</h1>
+        </div>
+    </body>
+
+</html>
