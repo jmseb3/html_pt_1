@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CH8-2</title>
+        <style>
+            input:focus {
+                border: 2px solid orange;
+                padding: 10px;
+            }
+            input:enabled {
+                color: blue;
+                font-weight: bold;
+            }
+        
+            input:disabled {
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <form >
+                Name : <input type="text" name="uname" > <br>
+                Id : <input type="text" name="uid" > <br>
+                Password : <input type="password" name="upw" value="12345" disabled="disabled" > <br>
+            </form>
+        </div>
+    </body>
+
+</html>

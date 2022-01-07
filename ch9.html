@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ch9</title>
+        <style>
+            #warp {
+                width: 800px;
+                margin: 0 aut0;
+            }
+
+            #header {
+                border-bottom: 1px solid #cccccc;
+            }
+
+            #history1::first-letter,
+            #history2::first-letter {
+                font-size: 2em;
+            }
+
+            #history1::first-line,
+            #history2::first-line {
+                font-weight: bold;
+                color: #2160d1;
+            }
+
+            #footer ul {
+                overflow: hidden;
+                border: 2px solid #cccccc;
+            }
+
+            #footer ul li {
+                list-style: none;
+                float: left;
+                padding: 20px;
+            }
+            #content p:first-child::selection{
+                background-color: blueviolet;
+                color: black;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="warp">
+            <div id="header">
+                <h1>설립 개요</h1>
+            </div>
+            <div id="content">
+                <p> 중소기업 머시기머시기 </p>
+                <p id="history1"> 2000년 00월 00일 <br> 블라블라블라 </p>
+                <p id="history2"> 2000년 00월 00일 <br> 블라블라블라 </p>
+            </div>
+            <div id="footer">
+                <ul>
+                    <li><img src="http://www.sba.seoul.kr/kr/images/footer/f_logo.png"></li>
+                    <li><img src="http://www.sba.seoul.kr/kr/images/footer/copyright.png"></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+
+</html>
